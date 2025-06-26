@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Information</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Aleo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <div class="search-bar">
+                <span class="menu-icon">&#9776;</span>
+                <input type="text" id="flight-input" placeholder="Search Flight NUMBER" />
+                <button type="submit" class="search-btn">&#128269;</button>
+            </div>
+        </form>
+        <div class="title">
+            <h1 class="weatherscot">Weatherscot</h1>
+            <h2 class="weatherscot2">Search chosen flight number</h2>
+        </div>
+        <div class="route-info" style="display:none;">
+            <span id="dep-time">dep - 08:00</span>
+            <span id="route-title">AAA to BBB</span>
+            <span id="arr-time">arr - 04:00</span>
+        </div>
+        <div class="weather-card" style="display:none;">
+            <div class="weather-main">
+                <div id="weather-icon" class="weather-icon">🌤️</div>
+                <div id="temperature" class="temperature">28°</div>
+                <div id="weather-description">Partly cloudy</div>
+            </div>
+            <div class="weather-details-row">
+                <div class="weather-detail">
+                    <span class="weather-detail-icon">
+                        <img src="images/humidity-svgrepo-com.svg" alt="Humidity Icon" style="width: 40px; height: 40px; vertical-align: middle;">
+                    </span>
+                    <span id="humidity" class="weather-detail-value">22%</span>
+                    <span class="weather-detail-label">Humidity</span>
+                </div>
+                <div class="weather-detail">
+                    <span class="weather-detail-icon">
+                        <img src="images/wind-svgrepo-com.svg" alt="Wind Icon" style="width: 40px; height: 40px; vertical-align: middle;">
+                    </span>
+                    <span id="wind-speed" class="weather-detail-value">6.2km/h</span>
+                    <span class="weather-detail-label">Wind Speed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
